@@ -1,0 +1,39 @@
+---
+title: "Making tweetParsR Package"
+author: "Paul Brennan"
+date: "22/08/2018"
+output: html_document
+---
+
+We need these packages to make package generation work...
+```{r setup, include=FALSE}
+library("devtools")
+library("roxygen2")
+library("testthat")
+library("knitr")
+```
+
+## Package created and function edited. 
+I have added some documentation but it's very light.
+To create documentation, run this:
+```{r document, echo=TRUE}
+devtools::document()
+```
+
+## Description edited to add imports
+Need to add more details here.
+
+
+## Check Build
+Can do this via the Build tab of RStudio or use the console
+
+```{r check}
+devtools::check()
+```
+
+## Need to add some tests
+Need some specifications and some data...
+
+```{r test}
+devtools::test()
+```

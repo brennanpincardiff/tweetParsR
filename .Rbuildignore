@@ -1,0 +1,3 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+documenting_making_package.Rmd
