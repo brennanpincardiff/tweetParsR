@@ -18,7 +18,8 @@
 parse_function <- function (x){
 
   if (stringr::str_detect(x, "jsonl")) {
-  gc()
+# what does this do?
+        gc()
   json <- ndjson::stream_in(x) %>%
     dplyr::filter(lang=="en") %>%
       dplyr::distinct(id_str,.keep_all = T) %>%

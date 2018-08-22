@@ -31,9 +31,21 @@ Can do this via the Build tab of RStudio or use the console
 devtools::check()
 ```
 
+## Added some data
+Two files:
+test_jsonl_file.csv
+test_jsonl_file.jsonl
+
+To check the data test the function (doesn't work at the moment :-(
+```{r running_function}
+parse_function("data/test_jsonl_file.jsonl")
+```
+
 ## Need to add some tests
 Need some specifications and some data...
 
 ```{r test}
 devtools::test()
 ```
+
+
